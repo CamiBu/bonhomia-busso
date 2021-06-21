@@ -4,6 +4,7 @@ import { Navbar, Nav, FormControl, Button, Form } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { } from '@fortawesome/free-brands-svg-icons';
+import CartWidget from "../cartWidget";
 
 const NavbarComponent =()=> {
     return (
@@ -22,7 +23,7 @@ const NavbarComponent =()=> {
             <FormControl type="text" placeholder="Search" className="mr-sm-2" />
             <Button variant="outline-primary">Buscar</Button>
           </Form>
-          <FontAwesomeIcon icon={ faShoppingCart }/> 
+          <CartWidget/>
            
           
         </Navbar>

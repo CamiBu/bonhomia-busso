@@ -2,7 +2,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import  NavbarComponent from './component/navBar';
-import CardComponent from './component/cardComponent';
+import CardContainer from './container/cardContainer';
 
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
     <>
     <NavbarComponent/> 
     <br/>
-    <CardComponent/>
+    <CardContainer/>
     </>  
   );
 }
