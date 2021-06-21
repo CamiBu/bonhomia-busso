@@ -11,6 +11,9 @@ function App() {
     <NavbarComponent/> 
     <br/>
     <CardContainer/>
+    <br/>
+  
+    <CardContainer/>
     </>  
   );
 }

@@ -1,6 +1,7 @@
 import { faProductHunt } from "@fortawesome/free-brands-svg-icons";
 import React from "react";
 import { CardDeck, Card } from 'react-bootstrap';
+import { ItemCount } from '../itemCount'
 
 export const CardComponent = () => {  
     return (
@@ -16,7 +17,7 @@ export const CardComponent = () => {
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-      <small className="text-muted">Acá van a ir las cuotas</small>
+      <small className="text-muted"><ItemCount stock="20" initial="1" /></small>
     </Card.Footer>
   </Card>
   <Card>
@@ -28,7 +29,7 @@ export const CardComponent = () => {
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-      <small className="text-muted">Acá van a ir las cuotas</small>
+      <small className="text-muted"><ItemCount stock="20" initial="1" /></small>
     </Card.Footer>
   </Card>
   <Card>
@@ -40,7 +41,7 @@ export const CardComponent = () => {
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-      <small className="text-muted">Acá van a ir las cuotas</small>
+      <small className="text-muted"><ItemCount stock="20" initial="1" /></small>
     </Card.Footer>
   </Card>
 </CardDeck>
