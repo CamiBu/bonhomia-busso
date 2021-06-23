@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "title": "producto A",
+        "description": "descripción del producto A",
+        "talle": "S",
+        "color": "blanco",
+        "stock": "30",
+        "price": "$20.000",
+        "pictureURL": "imagen"
+    },
+    {
+        "id": 2,
+        "title": "producto B",
+        "description": "descripción del producto B",
+        "talle": "XL",
+        "color": "negro",
+        "stock": "23",
+        "price": "$25.000",
+        "pictureURL": "imagen"
+    },
+    {
+        "id": 2,
+        "title": "producto C",
+        "description": "descripción del producto C",
+        "talle": "L",
+        "color": "azul",
+        "stock": "3",
+        "price": "$29.000",
+        "pictureURL": "imagen"
+    }
+]
