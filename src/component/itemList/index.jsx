@@ -1,16 +1,16 @@
 import React from "react"; 
-import { cardComponent } from '../cardComponent'
+import { Item } from '../item'
 
 
-export const ItemList = (products) => {  
+export const ItemList = ({productsList}) => {  
     return (
         <>
-        {products.map(product => {
-            return <cardComponent product={product} key={product.id}/> 
+        {productsList.map(product => {
+            return <Item product={product}/> 
         })
         }
     </>
     )
 }
 
-export default Itemlist 
+export default ItemList 

@@ -2,7 +2,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import  NavbarComponent from './component/navBar';
-import CardContainer from './container/cardContainer';
+import ItemListContainer from './container/ItemListContainer';
 
 
 function App() {
@@ -10,10 +10,7 @@ function App() {
     <>
     <NavbarComponent/> 
     <br/>
-    <CardContainer/>
-    <br/>
-  
-    <CardContainer/>
+    <ItemListContainer greeting="hola tienda"/>
     </>  
   );
 }
