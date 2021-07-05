@@ -1,21 +1,28 @@
 import React, { useState, useEffect } from "react";
 import ItemDetail from '../../component/itemDetail';
+import { useParams } from "react-router-dom";
+
 
 
 
 function ItemDetailContainer({ greeting }) {
 
     const [product, setProduct] = useState([])
+    const { id } = useParams();
 
     useEffect(() => {
         const waitForData = async () => {
-            const response = await fetch("./json/products.json")
+            const response = await fetch("/json/products.json")
             const json = await response.json()
-            setProduct(json[0])
+            let pro = id ? json.filter(element => element.id === id) : json
+            setProduct(pro)
         };
         waitForData();
 
-    }, [])
+    }, [id , product])
+
+
+
 
     return (
         <>

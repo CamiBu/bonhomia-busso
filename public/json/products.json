@@ -7,7 +7,8 @@
         "color": "blanco",
         "stock": "30",
         "price": "$20.000",
-        "pictureURL": "https://estaticos.muyinteresante.es/media/cache/1140x_thumb/uploads/images/gallery/59bbb29c5bafe878503c9872/husky-siberiano-bosque.jpg"
+        "pictureURL": "https://estaticos.muyinteresante.es/media/cache/1140x_thumb/uploads/images/gallery/59bbb29c5bafe878503c9872/husky-siberiano-bosque.jpg",
+        "category": "A"
     },
     {
         "id": 2,
@@ -17,16 +18,18 @@
         "color": "negro",
         "stock": "23",
         "price": "$25.000",
-        "pictureURL": "https://estaticos.muyinteresante.es/media/cache/1140x_thumb/uploads/images/gallery/59bbb29c5bafe878503c9872/husky-siberiano-bosque.jpg"
+        "pictureURL": "https://estaticos.muyinteresante.es/media/cache/1140x_thumb/uploads/images/gallery/59bbb29c5bafe878503c9872/husky-siberiano-bosque.jpg",
+        "category": "B"
     },
     {
-        "id": 2,
+        "id": 3,
         "title": "producto C",
         "description": "descripción del producto C",
         "talle": "L",
         "color": "azul",
         "stock": "3",
         "price": "$29.000",
-        "pictureURL": "https://estaticos.muyinteresante.es/media/cache/1140x_thumb/uploads/images/gallery/59bbb29c5bafe878503c9872/husky-siberiano-bosque.jpg"
+        "pictureURL": "https://estaticos.muyinteresante.es/media/cache/1140x_thumb/uploads/images/gallery/59bbb29c5bafe878503c9872/husky-siberiano-bosque.jpg",
+        "category": "A"
     }
 ]
