@@ -2,34 +2,34 @@
     {
         "id": 1,
         "title": "producto A",
-        "description": "descripción del producto A",
+        "description": "descripción del producto A DONDE SE BRINDARÁ MÁS INFORMACIÓN SOBRE EL PRODUCTO",
         "talle": "S",
         "color": "blanco",
         "stock": "30",
         "price": "$20.000",
-        "pictureURL": "https://estaticos.muyinteresante.es/media/cache/1140x_thumb/uploads/images/gallery/59bbb29c5bafe878503c9872/husky-siberiano-bosque.jpg",
+        "pictureURL": "https://i.pinimg.com/564x/2b/13/2f/2b132f803bf4367493078d945d90552d.jpg",
         "category": "A"
     },
     {
         "id": 2,
         "title": "producto B",
-        "description": "descripción del producto B",
+        "description": "descripción del producto B DONDE SE BRINDARÁ MÁS INFORMACIÓN SOBRE EL PRODUCTO",
         "talle": "XL",
-        "color": "negro",
+        "color": "negro", 
         "stock": "23",
         "price": "$25.000",
-        "pictureURL": "https://estaticos.muyinteresante.es/media/cache/1140x_thumb/uploads/images/gallery/59bbb29c5bafe878503c9872/husky-siberiano-bosque.jpg",
+        "pictureURL": "https://i.pinimg.com/474x/34/03/b6/3403b6f1230863ba7d87958d8e34848f.jpg",
         "category": "B"
     },
     {
         "id": 3,
         "title": "producto C",
-        "description": "descripción del producto C",
+        "description": "descripción del producto C DONDE SE BRINDARÁ MÁS INFORMACIÓN SOBRE EL PRODUCTO",
         "talle": "L",
         "color": "azul",
         "stock": "3",
         "price": "$29.000",
-        "pictureURL": "https://estaticos.muyinteresante.es/media/cache/1140x_thumb/uploads/images/gallery/59bbb29c5bafe878503c9872/husky-siberiano-bosque.jpg",
+        "pictureURL": "https://i.pinimg.com/564x/d9/51/86/d9518679ba41f3f0540d7fb2d603970a.jpg",
         "category": "A"
     }
 ]

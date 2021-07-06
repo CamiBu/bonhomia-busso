@@ -9,7 +9,7 @@ export const ItemDetail = ({ product }) => {
 
 
             <Card>
-                <Card.Img variant="top" src={ product.pictureURL } /> 
+                <Card.Img variant="top" src={product.pictureURL} />
                 <Card.Body>
                     <Card.Title> {product.title} </Card.Title>
                     <Card.Text>

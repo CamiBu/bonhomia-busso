@@ -1,28 +1,31 @@
 
 import React from "react";
 import { Card } from 'react-bootstrap';
-import { ItemCount } from '../itemCount'
+import { Link } from "react-router-dom";
+
 
 export const Item = ({ product }) => {
   return (
     <>
-      
 
-        <Card className="col-md-4" >
-          <Card.Img variant="top" src= { product.pictureURL } />
-          <Card.Body>
-            <Card.Title> {product.title} </Card.Title>
-            <Card.Text>
-              {product.description}
-              {product.price}
-            </Card.Text>
-          </Card.Body>
-          <Card.Footer>
-            <small className="text-muted"><ItemCount stock={product.stock} initial="1" /></small>
-          </Card.Footer>
-        </Card>
 
-      
+      <Card className="col-md-4">
+        <Link to={"/item/" + product.id}>
+          <Card.Img variant="top" src={product.pictureURL} />
+        </Link>
+        <Card.Body>
+          <Card.Title> {product.title} </Card.Title>
+          <Card.Text>
+            {product.price}
+          </Card.Text>
+          <Link to={"/item/" + product.id}>
+            <button> Ver detalle </button>
+          </Link>
+        </Card.Body>
+
+      </Card>
+
+
 
     </>
   )
