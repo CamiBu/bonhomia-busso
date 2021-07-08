@@ -17,7 +17,7 @@ export const ItemCount = (props) => {
     }
 
     function agregarAlCarrito() {
-        alert(`agregaste ${valor} productos al carrito`)
+        
     }
 
     return (
@@ -25,7 +25,7 @@ export const ItemCount = (props) => {
             <button onClick={onSubstract}> - </button>
             <input type="text" value={valor} />
             <button onClick={onAdd}> + </button>
-            <button onClick={agregarAlCarrito}> Agregar al carrito </button>
+            <button onClick={() => {agregarAlCarrito(agregarAlCarrito);}}> Agregar al carrito </button>
         </>
     )
 

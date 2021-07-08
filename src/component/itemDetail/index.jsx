@@ -1,9 +1,14 @@
 
 import React from "react";
 import { Card } from 'react-bootstrap';
-import { ItemCount } from '../itemCount'
+import { ItemCount } from '../itemCount';
+import { useState } from "react"
 
 export const ItemDetail = ({ product }) => {
+    const [ finalizarCompra , setFinalizarCompra ] = useState(null)
+    function agregarAlCarrito (product) {
+        setFinalizarCompra(finalizarCompra)
+    }
     return (
         <>
 
@@ -18,7 +23,7 @@ export const ItemDetail = ({ product }) => {
                     </Card.Text>
                 </Card.Body>
                 <Card.Footer>
-                    <small className="text-muted"><ItemCount stock={product.stock} initial="1" /></small>
+                {!finalizarCompra ? <ItemCount agregarAlCarrito={agregarAlCarrito} stock={product.stock} initial={1} /> : "finalizar compra"} 
                 </Card.Footer>
             </Card>
 
