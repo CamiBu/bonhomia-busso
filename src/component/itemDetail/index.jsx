@@ -1,32 +1,34 @@
 
-import React from "react";
+import React, { useContext } from "react";
 import { Card } from 'react-bootstrap';
 import { ItemCount } from '../itemCount';
 import { useState } from "react"
+import { ShopContext } from "../../context/CartContext";
 
 export const ItemDetail = ({ product }) => {
-    const [ finalizarCompra , setFinalizarCompra ] = useState(null)
-    function agregarAlCarrito (product) {
-        setFinalizarCompra(finalizarCompra)
-    }
+
+    const context = useContext(ShopContext);
+
+    const [cantidad, setCantidad] = useState()  // el primero es la variable - la segunda es la funcion modificadora de la primera
+    const cantidadSelect = (qty) => {         // recibe un parametro de otro lado
+        
+        setCantidad(qty)                        // llama a otra funcion para que le de un valor a cantidad
+       
+    };
+
     return (
         <>
-
-
-            <Card>
-                <Card.Img variant="top" src={product.pictureURL} />
-                <Card.Body>
+            <Card >
+                <Card.Img src={product.pictureURL} />
+                <Card.ImgOverlay>
                     <Card.Title> {product.title} </Card.Title>
                     <Card.Text>
                         {product.description}
-                        {product.price}
                     </Card.Text>
-                </Card.Body>
-                <Card.Footer>
-                {!finalizarCompra ? <ItemCount agregarAlCarrito={agregarAlCarrito} stock={product.stock} initial={1} /> : "finalizar compra"} 
-                </Card.Footer>
+                    <Card.Text>{product.price}</Card.Text>
+                   {cantidad ? "terminar compra" : <ItemCount cantidadSelect={cantidadSelect} stock={product.stock} initial="1" />}         
+                </Card.ImgOverlay>
             </Card>
-
 
 
         </>

@@ -1,9 +1,9 @@
 
 import { useState } from "react";
 
+
 export const ItemCount = (props) => {
     const [valor, setValor] = useState(props.initial);
-
     function onAdd() {
         if (valor < props.stock) {
             setValor(parseInt(valor) + 1)
@@ -15,9 +15,9 @@ export const ItemCount = (props) => {
             setValor(parseInt(valor) - 1)
 
     }
-
-    function agregarAlCarrito() {
-        
+    
+    function agregarCantidad() {
+        props.cantidadSelect(valor)
     }
 
     return (
@@ -25,7 +25,7 @@ export const ItemCount = (props) => {
             <button onClick={onSubstract}> - </button>
             <input type="text" value={valor} />
             <button onClick={onAdd}> + </button>
-            <button onClick={() => {agregarAlCarrito(agregarAlCarrito);}}> Agregar al carrito </button>
+            <button onClick={agregarCantidad} > Agregar al carrito </button>
         </>
     )
 
